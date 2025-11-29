@@ -14,7 +14,7 @@ const footer_data: DataType[] = [
       id:1,
       page:"home_1",
       widget_title: "About",
-      footer_link: [{ link: "#", link_title: "Home" }, { link: "#", link_title: "About Us" }, { link: "#", link_title: "Our Programs" }, { link: "#", link_title: "Contact Us" }, { link: "#", link_title: "Donate" },]
+      footer_link: [{ link: "/", link_title: "Home" }, { link: "/about", link_title: "About Us" }, { link: "/causes", link_title: "Our Programs" }, { link: "/contact", link_title: "Contact Us" }, { link: "https://flutterwave.com/donate/plyjpesfl4wx", link_title: "Donate" },{ link: "/sisters-unite-brochure.pdf", link_title: "Our Brochure" },,]
    },
    {
       id:2,

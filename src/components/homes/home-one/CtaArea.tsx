@@ -9,7 +9,7 @@ const CtaArea = () => {
                   <div className="section-title text-center text-white">
                      <h2>Join us to transform <span>lives</span></h2>
                      <p>Help us improve the lives of children in need.</p>
-                     <Link className="cr-btn mt-30" href="#">Donate Now</Link>
+                     <Link className="cr-btn mt-30" href="https://flutterwave.com/donate/plyjpesfl4wx">Donate Now</Link>
                   </div>
                </div>
             </div>

@@ -246,7 +246,7 @@ const CauseDetailsForm = () => {
                         <h5>Total donation</h5>
                         <span className="price">$50</span>
                      </div>
-                     <button type="submit" className="cr-btn ml-5">Donation Now</button>
+                     <button type="submit" className="cr-btn ml-5">Donate Now</button>
                   </div>
                </div>
             </div>

@@ -38,7 +38,7 @@ const Charity = () => {
                               <div className="progress-bar progress-bar-striped progress-bar-animated" style={{ width: "60%" }}></div>
                            </div>
                         </div>
-                        <Link className="cr-btn" href="#">Donation now</Link>
+                        <Link className="cr-btn" href="https://flutterwave.com/donate/plyjpesfl4wx">Donate now</Link>
                      </div>
                   </div>
                </div>

@@ -41,7 +41,7 @@ const UrgentCause = () => {
                               <div className={`progress-bar progress-bar-striped progress-bar-animated ${item.progress_bg}`} style={{ width: item.progress_width }}></div>
                            </div>
                            <div className="cause-btn">
-                              <Link className={`cr-btn ${item.btn_bg}`} href="#">Donation now</Link>
+                              <Link className={`cr-btn ${item.btn_bg}`} href="https://flutterwave.com/donate/plyjpesfl4wx">Donate now</Link>
                            </div>
                         </div>
                      </div>

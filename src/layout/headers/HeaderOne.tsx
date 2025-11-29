@@ -57,7 +57,7 @@ const HeaderOne = ({ style_1, style_2 }: any) => {
                         <i className="flaticon-user-1"></i>
                      </Link>
                   </div>
-                  <Link className="cr-btn btn--style-two" href="/donate">Donate Now</Link>
+                  <Link className="cr-btn btn--style-two" href="https://flutterwave.com/donate/plyjpesfl4wx">Donate Now</Link>
                </div>
             </div>
          </nav>

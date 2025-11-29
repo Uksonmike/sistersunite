@@ -52,7 +52,7 @@ const About = () => {
                         <span className="section-title__subtitle mb-10">Sisters Unite for Children (SUC)</span>
                         <h2>About Us </h2>
                      </div>
-                     <p>Sisters United for Children aims to make a meaningful difference in the lives of vulnerable children. We focus on providing scholarships, back-to-school kits, mentorship programs, and community engagement activities.</p>
+                     <p>Sisters Unite for Children is a non-profit institution founded by Nkeiruka Obi that focuses on helping street children in Nigeria. The organization provides shelter, education, life skills, and family reintegration for vulnerable children in Lagos. </p>
                      {counter_data.filter((item) => item.page === "home_1").map((item) => (
                         <div key={item.id} className="counter-item counter-text-wrap">
                            <div className={`counter-item__icon ${item.icon_bg}`}><i className={item.icon}></i></div>
@@ -63,6 +63,13 @@ const About = () => {
                         </div>
                      ))}
                      <Link className="cr-btn ml-5 mt-25" href="about">Learn more</Link>
+
+
+                    
+                  <Link className="mx-2 cr-btn btn--yellow btn--style-two" href="/sisters-unite-brochure.pdf">Our Brochure (PDF)</Link>
+            
+
+
                   </div>
                </div>
             </div>

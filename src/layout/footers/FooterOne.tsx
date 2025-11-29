@@ -19,7 +19,7 @@ interface ContentData {
 }
 
 const footer_content: ContentData = {
-   footer_about_text: (<>Sisters Unite for Children (SUC) is a charitable nonprofit organization dedicated to protecting, educating, and empowering vulnerable children and families in Nigeria.</>),
+   footer_about_text: (<>Sisters United for Children –  www.sistersunite.org.ng – is a group of friends and professional Christian women who have distinguished themselves in various fields of endeavor cutting across Banking/Finance, Pharmacy, Education, Diplomatic Corps, Public Service etc. </>),
    gallery: [footerGallery_1, footerGallery_2, footerGallery_3, footerGallery_4, footerGallery_5, footerGallery_6],
 }
 

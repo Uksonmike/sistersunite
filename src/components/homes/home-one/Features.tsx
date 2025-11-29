@@ -79,7 +79,7 @@ const Features = () => {
                                  <h3>{item.title}</h3>
                                  <p>{item.desc}</p>
                               </div>
-                              <Link className={`cr-btn ${item.btn_bg}`} href="#">Donation now</Link>
+                              <Link className={`cr-btn ${item.btn_bg}`} href="https://flutterwave.com/donate/plyjpesfl4wx">Donate now</Link>
                            </div>
                         ))}
                      </Slider>
