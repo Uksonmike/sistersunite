@@ -19,9 +19,9 @@ const Volunteer = ({ style }: any) => {
             <div className="row justify-content-center">
                <div className="col-xl-6 col-lg-8 col-md-10">
                   <div className="section-title text-center mb-60">
-                     <span className="section-title__subtitle mb-10">Our Volunteers</span>
-                     {style ? <h3>Meet <span>With Volunteers</span></h3> : <h2>Our <span>Volunteers</span> Style 01</h2>}
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
+                     <span className="section-title__subtitle mb-10">Our Team</span>
+                     {style ? <h3>Our <span>Leadership</span></h3> : <h2>Our <span>Volunteers</span> Style 01</h2>}
+                     <p>Our dedicated team members have distinguished themselves across various fields of endeavor, including Banking/Finance, Pharmacy, Education, Diplomatic Corps, Public Service, and more.</p>
                   </div>
                </div>
             </div>
@@ -43,7 +43,7 @@ const Volunteer = ({ style }: any) => {
                         </div>
                         <div className="valunteer-item__designation">
                            <h5>{item.name}</h5>
-                           <span>volunteer</span>
+                           <span>Member</span>
                         </div>
                      </div>
                   </div>

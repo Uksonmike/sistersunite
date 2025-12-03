@@ -38,20 +38,20 @@ const volunteer_data: DataType[] = [
       id: 1,
       page: "home_1",
       thumb: volunteerThumb_1,
-      name: "Robart Jonson",
+      name: "Olufemi Bola-Sadipe",
       item_bg: "valunteer-item--green",
    },
    {
       id: 2,
       page: "home_1",
       thumb: volunteerThumb_2,
-      name: "Leslie Alexander"
+      name: "Chidera Obi"
    },
    {
       id: 3,
       page: "home_1",
       thumb: volunteerThumb_3,
-      name: "Kristin Watson",
+      name: "Yetunde Onanuga",
       item_bg: "valunteer-item--yellow",
    },
    {
