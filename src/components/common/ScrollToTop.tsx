@@ -1,49 +1,41 @@
-"use client"
+"use client";
 import UseSticky from "@/hooks/UseSticky";
-// import ScrollToTopIcon from "@/svg/OtherIcons/ScrollToTopIcon";
 import { useState, useEffect } from "react";
 
 const ScrollToTop = () => {
-   const { sticky }: { sticky: boolean } = UseSticky();
+  const { sticky }: { sticky: boolean } = UseSticky();
 
-   const [showScroll, setShowScroll] = useState(false);
+  const [showScroll, setShowScroll] = useState(false);
 
-   const checkScrollTop = () => {
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    const checkScrollTop = () => {
       if (!showScroll && window.pageYOffset > 400) {
-         setShowScroll(true);
+        setShowScroll(true);
       } else if (showScroll && window.pageYOffset <= 400) {
-         setShowScroll(false);
+        setShowScroll(false);
       }
-   };
+    };
 
-   const scrollTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-   };
+    window.addEventListener("scroll", checkScrollTop);
+    return () => window.removeEventListener("scroll", checkScrollTop);
+  }, [, showScroll]);
 
-   // useEffect(() => {
-   //    window.addEventListener("scroll", checkScrollTop);
-   //    return () => window.removeEventListener("scroll", checkScrollTop);
-   // }, []);
-   useEffect(() => {
-      const checkScrollTop = () => {
-         if (!showScroll && window.pageYOffset > 400) {
-            setShowScroll(true);
-         } else if (showScroll && window.pageYOffset <= 400) {
-            setShowScroll(false);
-         }
-      };
+  return (
+    <>
+      <div
+        onClick={scrollTop}
+        className={`back-to-top ${sticky ? "active" : ""}`}
+      >
+        <span className="back-top">
+          <i className="fa fa-angle-up"></i>
+        </span>
+      </div>
+    </>
+  );
+};
 
-      window.addEventListener("scroll", checkScrollTop);
-      return () => window.removeEventListener("scroll", checkScrollTop);
-   }, [checkScrollTop]);
-
-   return (
-      <>
-         <div onClick={scrollTop} className={`back-to-top ${sticky ? "active" : ""}`}>
-            <span className="back-top"><i className="fa fa-angle-up"></i></span>
-         </div>
-      </>
-   )
-}
-
-export default ScrollToTop
+export default ScrollToTop;
