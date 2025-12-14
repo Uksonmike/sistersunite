@@ -6,22 +6,25 @@ import FooterOne from "@/layout/footers/FooterOne";
 import HeaderOne from "@/layout/headers/HeaderOne";
 
 export const metadata = {
-   title: "Projects | Sisters Unite for Children",
+  title: "Projects | Sisters Unite for Children",
 };
 const index = ({ params }: { params: { id: number } }) => {
-   const causes = cause_data.filter(items => items.page === "inner_page");
-   const single_cause = causes.find((item) => Number(item.id) === Number(params.id));
+  const causes = cause_data.filter((items) => items.page === "inner_page");
+  const single_cause = causes.find(
+    (item) => Number(item.id) === Number(params.id)
+  );
+  const title = single_cause?.title;
 
-   return (
-      <Wrapper>
-         <HeaderOne />
-         <main>
-            <Breadcrumb page_title="Cause Details" page_list="Cause Details" />
-            <CauseDetailsArea single_cause ={single_cause} key={single_cause?.id} />
-         </main>
-         <FooterOne />
-      </Wrapper>
-   )
-}
+  return (
+    <Wrapper>
+      <HeaderOne />
+      <main>
+        <Breadcrumb page_title={title} page_list={title} />
+        <CauseDetailsArea single_cause={single_cause} key={single_cause?.id} />
+      </main>
+      <FooterOne />
+    </Wrapper>
+  );
+};
 
-export default index
+export default index;
