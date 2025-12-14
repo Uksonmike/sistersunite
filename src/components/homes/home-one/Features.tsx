@@ -93,7 +93,7 @@ const Features = () => {
                            <div className="section-title mb-35">
                               <span className="section-title__subtitle mb-10">Our Features</span>
                               <h2>How Could <span>You Help?</span></h2>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati consectetur adipisicing</p>
+                              <p>Your involvement is vital to everything we do. We offer several pathways for individuals and organizations to contribute directly to the well-being and future of underprivileged children.</p>
                            </div>
                         </div>
                      </div>

@@ -29,10 +29,10 @@ const menu_data: MenuItem[] = [
         title: "Our Programs",
         link: "/causes", 
           sub_menus: [
-            { link: "#", title: "Back-to-School Drive" },
-            { link: "#", title: "Mothers of Influence" }, 
-            { link: "#", title: "Becoming a Better You (BABY)" }, 
-            { link: "#", title: "Community Outreach Projects" } 
+            { link: "/causes-details/1", title: "Back-to-School Drive" },
+            { link: "/causes-details/2", title: "Mothers of Influence" }, 
+            { link: "/causes-details/3", title: "Becoming a Better You (BABY)" }, 
+            { link: "/causes-details/4", title: "Community Outreach Projects" } 
         ],
     },
     {

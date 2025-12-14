@@ -61,7 +61,12 @@ const CauseArea = () => {
                          
                            <p> {item.desc}</p>
                            <div className="cause-btn">
-                              <Link className={`cr-btn ${item.btn_bg}`} href="#">Learn More</Link>
+                             <Link 
+                                 className={`cr-btn ${item.btn_bg}`} 
+                                 href={`/causes-details/${item.id}`} // Using the dynamic ID for the link
+                              >
+                                 Learn More
+                              </Link>
                            </div>
                         </div>
                      </div>
@@ -69,21 +74,7 @@ const CauseArea = () => {
                ))}
             </div>
             
-            <div className="pagination pt-20">
-               <ul className="list-wrap d-flex align-items-center justify-content-center" style={{margin:"0"}}>
-                  <li className="prev page-numbers">
-                     <a onClick={() => handlePageClick(currentPage - 1)} style={{ cursor: 'pointer' }} className={currentPage === 1 ? 'disabled' : ''}>
-                        <i className="flaticon-left-chevron"></i>
-                     </a>
-                  </li>
-                  {renderPaginationLinks()}
-                  <li className="next page-numbers">
-                     <a onClick={() => handlePageClick(currentPage + 1)} style={{ cursor: 'pointer' }} className={currentPage === totalPages ? 'disabled' : ''}>
-                        <i className="flaticon-chevron"></i>
-                     </a>
-                  </li>
-               </ul>
-            </div>
+            
          </div>
       </div>
    )

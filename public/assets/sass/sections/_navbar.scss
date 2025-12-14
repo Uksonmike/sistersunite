@@ -641,10 +641,10 @@
 }
 
 .navbar-area.navbar--one{
-    padding: 30px 0;
+    padding: 30px 90px;
 }
 .navbar-area.sticky-active{
-    padding: 10px 0;
+    padding: 30px 90px;
 }
 
 //toggle button css
@@ -786,7 +786,7 @@
 
 @media only screen and (max-width:991px) {
     .navbar-area .logo {
-        max-width: 145px;
+        max-width: 245px;
     }
 
     .widget ul {

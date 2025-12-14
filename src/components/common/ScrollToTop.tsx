@@ -26,14 +26,7 @@ const ScrollToTop = () => {
 
   return (
     <>
-      <div
-        onClick={scrollTop}
-        className={`back-to-top ${sticky ? "active" : ""}`}
-      >
-        <span className="back-top">
-          <i className="fa fa-angle-up"></i>
-        </span>
-      </div>
+    
     </>
   );
 };

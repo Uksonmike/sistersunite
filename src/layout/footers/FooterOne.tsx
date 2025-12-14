@@ -6,48 +6,39 @@ import footer_data from "@/data/footerData";
 import logo_1 from "@/assets/img/logos/logo-white.png";
 import donate from "@/assets/img/footer/donate-by.png";
 
-import footerGallery_1 from "@/assets/img/footer/gallery1.jpg";
-import footerGallery_2 from "@/assets/img/footer/gallery2.jpg";
-import footerGallery_3 from "@/assets/img/footer/gallery3.jpg";
-import footerGallery_4 from "@/assets/img/footer/gallery4.jpg";
-import footerGallery_5 from "@/assets/img/footer/gallery5.jpg";
-import footerGallery_6 from "@/assets/img/footer/gallery6.jpg";
+// Gallery imports were removed
 
 interface ContentData {
   footer_about_text: JSX.Element;
-  gallery: StaticImageData[];
 }
 
 const footer_content: ContentData = {
   footer_about_text: (
     <>
-      Sisters United for Children – www.sistersunite.org.ng – is a group of
+      Sisters Unite for Children – www.sistersunite.org.ng – is a group of
       friends and professional Christian women who have distinguished themselves
       in various fields of endeavor cutting across Banking/Finance, Pharmacy,
       Education, Diplomatic Corps, Public Service etc.{" "}
     </>
   ),
-  gallery: [
-    footerGallery_1,
-    footerGallery_2,
-    footerGallery_3,
-    footerGallery_4,
-    footerGallery_5,
-    footerGallery_6,
-  ],
 };
 
-const { footer_about_text, gallery } = footer_content;
+const { footer_about_text } = footer_content; 
 
 const FooterOne = () => {
   return (
     <footer
       className="footer-area overlay text-white pt-120 bgs-cover"
-      style={{ backgroundImage: `url(/assets/img/footer/footer-bg.jpg)` }}
     >
       <div className="container">
         <div className="row justify-content-between">
-          <div className="col-lg-3 col-md-6 col-sm-8">
+          
+          {/* COLUMN 1: About Section 
+              col-12: Full width on mobile (stacks vertically)
+              col-lg-4: Wider on desktop (1/3rd of the 12-column grid, adjusted from original 3) 
+              col-md-6: Half width on tablet
+          */}
+          <div className="col-12 col-lg-4 col-md-6"> 
             <div className="widget widget_about">
               <div className="logo_footer mb-25">
                 <Link href="/">
@@ -61,10 +52,15 @@ const FooterOne = () => {
             </div>
           </div>
 
+          {/* COLUMN 2 & 3: Link Lists 
+              col-12: Full width on mobile (stacks vertically)
+              col-lg-2: Narrower on desktop
+              col-md-3: Quarter width on tablet (allowing two link columns to sit next to the about column)
+          */}
           {footer_data
             .filter((item) => item.page === "home_1")
             .map((item) => (
-              <div key={item.id} className="col-lg-2 col-md-3 col-sm-4 col-6">
+              <div key={item.id} className="col-12 col-lg-2 col-md-3"> 
                 <div className="widget widget_nav_menu">
                   <h5 className="widget-title">{item.widget_title}</h5>
                   <ul>
@@ -78,18 +74,8 @@ const FooterOne = () => {
               </div>
             ))}
 
-          <div className="col-lg-3 col-md-6 col-sm-8">
-            <div className="widget widget_gallery">
-              <h4 className="widget-title">Photo Gallery</h4>
-              <div className="gallery-photos">
-                {gallery.map((gallery, index) => (
-                  <a style={{ cursor: "pointer" }} key={index}>
-                    <Image src={gallery} alt="Gallery" />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
+          {/* The Photo Gallery column has been removed */}
+
         </div>
       </div>
 

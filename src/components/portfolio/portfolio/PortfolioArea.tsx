@@ -1,7 +1,7 @@
 "use client"
 import portfolio_data from "@/data/portfolioData";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "next/link"; // Link is technically no longer needed here, but kept for safety
 import { useState } from "react";
 
 const tab_title: string[] = ["All", "Mothers of Influence", "Community Outreach", "Back to School", "Becoming a Better You"];
@@ -20,15 +20,9 @@ const PortfolioArea = () => {
       <div key={item.id} className="col-xl-4 col-md-6 item cleanWater foodHealth">
         <div className="portfolio-item image">
           <Image src={item.thumb} alt="Portfolio" />
-          <div className="portfolio-item__over">
-            <a className="details-btn" href="portfolio-details.html">
-              <i className="flaticon-chevron"></i>
-            </a>
-            <h5>
-              <Link href="/portfolio-details">{item.title}</Link>
-            </h5>
-            <span className="category">{item.category}</span>
-          </div>
+          
+          {/* REMOVED: The portfolio-item__over block that contained the icon, title, and category. */}
+          
         </div>
       </div>
     ));

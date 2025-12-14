@@ -32,18 +32,12 @@ const Volunteer = ({ style }: any) => {
                      <div className={`valunteer-item ${item.item_bg}`}>
                         <div className="valunteer-item__img">
                            <Image src={item.thumb} alt="Valunteer" />
-                           <div className="share">
-                              <button><i className="flaticon-share"></i></button>
-                              <div className="share__socials">
-                                 <Link href="#"><i className="flaticon-google-plus-logo"></i></Link>
-                                 <Link href="#" className="twitter"><i className="flaticon-twitter"></i></Link>
-                                 <Link href="#" className="facebook"><i className="flaticon-facebook"></i></Link>
-                              </div>
-                           </div>
+                         
                         </div>
                         <div className="valunteer-item__designation">
                            <h5>{item.name}</h5>
-                           <span>Member</span>
+                           {/* --- CHANGE IS HERE --- */}
+                           <span>{item.designation}</span>
                         </div>
                      </div>
                   </div>

@@ -30,10 +30,10 @@ const footer_data: DataType[] = [
     page: "home_1",
     widget_title: "Our Programs",
     footer_link: [
-      { link: "#", link_title: "Back-to-School Drive" },
-      { link: "#", link_title: "Mothers of Influence" },
-      { link: "#", link_title: " Becoming a Better You (BABY)" },
-      { link: "#", link_title: "Community Outreach Projects" },
+      { link: "/causes-details/1", link_title: "Back-to-School Drive" },
+      { link: "/causes-details/2", link_title: "Mothers of Influence" },
+      { link: "/causes-details/3", link_title: " Becoming a Better You (BABY)" },
+      { link: "/causes-details/4", link_title: "Community Outreach Projects" },
     ],
   },
   {
@@ -41,9 +41,9 @@ const footer_data: DataType[] = [
     page: "home_1",
     widget_title: "Explore",
     footer_link: [
-      { link: "#", link_title: "E-Brochure" },
-      { link: "#", link_title: "Contact Us" },
-      { link: "#", link_title: "Gallery" },
+      { link: "/sisters-unite-brochure.pdf", link_title: "E-Brochure" },
+      { link: "/contact", link_title: "Contact Us" },
+      { link: "/portfolio", link_title: "Gallery" },
     ],
   },
 

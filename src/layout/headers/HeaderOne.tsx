@@ -41,22 +41,13 @@ const HeaderOne = ({ style_1, style_2 }: any) => {
                   <Link href="/"><Image src={style_2 ? HeaderLogo_2 : HeaderLogo_1} alt="img" /></Link>
                </div>
                <div className="nav-right-part nav-right-part-mobile">
-                  <a style={{ cursor: "pointer" }} className="search-bar-btn">
-                     <i onClick={() => setIsSearch(true)} className="flaticon-magnifying-glass"></i>
-                  </a>
+                  
                </div>
                <div className={`collapse navbar-collapse ${isActive ? "sopen" : ""}`} id="Iitechie_main_menu">
                   <NavMenu />
                </div>
                <div className="nav-right-part nav-right-part-desktop">
-                  <a style={{ cursor: "pointer" }} className="search-bar-btn">
-                     <i onClick={() => setIsSearch(true)} className="flaticon-magnifying-glass"></i>
-                  </a>
-                  <div className="dropdown">
-                     <Link className="dropdown-toggle" href="#">
-                        <i className="flaticon-user-1"></i>
-                     </Link>
-                  </div>
+                 
                   <Link className="cr-btn btn--style-two" href="https://flutterwave.com/donate/plyjpesfl4wx">Donate Now</Link>
                </div>
             </div>

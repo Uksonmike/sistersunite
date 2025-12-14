@@ -8,15 +8,7 @@ const OurCause = () => {
    return (
       <div className="our-cause-area pt-120 pb-90 rel z-1">
          <div className="container">
-            <div className="row justify-content-center">
-               <div className="col-xl-6 col-lg-8 col-md-10">
-                  <div className="section-title text-center mb-50">
-                     <span className="section-title__subtitle mb-10">Our Programs</span>
-                     <h3>Our <span>Projects / Programs</span></h3>
-                     <p>Explore our ongoing programs and community outreach initiatives. </p>
-                  </div>
-               </div>
-            </div>
+            {/* ... section-title ... */}
             
             <div className="row">
                {cause_data.filter((item) => item.page === "home_1").map((item) => (
@@ -26,12 +18,17 @@ const OurCause = () => {
                            <Image src={item.img} alt="Cause" />
                         </div>
                         <div className="content">
-                           <h5><Link href="/causes">{item.title}</Link></h5>
+                           <h5>{item.title}</h5>
                            <p>{item.desc}</p>
                           
-                          
                            <div className="cause-btn">
-                              <Link className={`cr-btn ${item.btn_bg}`} href="#">Learn More</Link>
+                              {/* --- CHANGE IS HERE --- */}
+                              <Link 
+                                 className={`cr-btn ${item.btn_bg}`} 
+                                 href={`causes-details/${item.id}`} // Dynamic link using item.id
+                              >
+                                 Learn More
+                              </Link>
                            </div>
                         </div>
                      </div>

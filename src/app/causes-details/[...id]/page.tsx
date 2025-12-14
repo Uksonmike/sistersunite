@@ -6,7 +6,7 @@ import FooterOne from "@/layout/footers/FooterOne";
 import HeaderOne from "@/layout/headers/HeaderOne";
 
 export const metadata = {
-   title: "Cause Details Charite - Charity & Donation React Next js Template",
+   title: "Projects | Sisters Unite for Children",
 };
 const index = ({ params }: { params: { id: number } }) => {
    const causes = cause_data.filter(items => items.page === "inner_page");

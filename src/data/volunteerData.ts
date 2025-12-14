@@ -39,12 +39,14 @@ const volunteer_data: DataType[] = [
       page: "home_1",
       thumb: volunteerThumb_1,
       name: "Olufemi Bola-Sadipe",
+      designation: "Board of Advisor",
       item_bg: "valunteer-item--green",
    },
    {
       id: 2,
       page: "home_1",
       thumb: volunteerThumb_2,
+      designation: "Program Coordinator",
       name: "Chidera Obi"
    },
    {
@@ -52,6 +54,7 @@ const volunteer_data: DataType[] = [
       page: "home_1",
       thumb: volunteerThumb_3,
       name: "Yetunde Onanuga",
+      designation: "Member",
       item_bg: "valunteer-item--yellow",
    },
    {

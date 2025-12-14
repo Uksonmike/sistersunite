@@ -66,7 +66,7 @@ const About = () => {
 
 
                     
-                  <Link className="mx-2 cr-btn btn--yellow btn--style-two" href="/sisters-unite-brochure.pdf">Our Brochure (PDF)</Link>
+                  <Link className="mx-2 cr-btn btn--yellow btn--style-two" href="/sisters-unite-brochure.pdf">Our Brochure</Link>
             
 
 

@@ -53,19 +53,14 @@ const ContactForm = () => {
                   <p className="form_error">{errors.email?.message}</p>
                </div>
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-12">
                <div className="form-group">
                   <label htmlFor="phone_number">Phone Number</label>
                   <input type="text" id="phone_number" {...register("phone")} className="form-control" placeholder="Phone Number" />
                   <p className="form_error">{errors.phone?.message}</p>
                </div>
             </div>
-            <div className="col-sm-6">
-               <div className="form-group">
-                  <label htmlFor="phone_number">Date Of Birth</label>
-                  <input type="date" id="birth-day" name="birth-day" className="form-control" />
-               </div>
-            </div>
+          
             <div className="col-md-12">
                <div className="form-group">
                   <label htmlFor="message">Message</label>

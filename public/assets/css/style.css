@@ -2320,7 +2320,7 @@ ul li {
 
 @media only screen and (max-width: 991px) {
   .navbar-area .logo {
-    max-width: 145px;
+    max-width: 245px;
   }
 
   .widget ul {
@@ -2334,7 +2334,7 @@ ul li {
   }
 
   .navbar-area.navbar--one {
-    padding: 10px 0;
+    padding: 30px 90px;
     background: #fff;
     position: absolute;
   }

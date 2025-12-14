@@ -2,7 +2,7 @@ import Portfolio from "@/components/portfolio/portfolio";
 import Wrapper from "@/layout/Wrapper";
 
 export const metadata = {
-   title: "Portfolio Charity - Charity & Donation React Next js Template",
+   title: "Gallery | Sisters Unite For Children (SUC)",
 };
 const index = () => {
    return (
