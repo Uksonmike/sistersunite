@@ -2,6 +2,48 @@
     ## Volunteers
 ------------------------------------------------*/
 
+
+/* Container for image and description. Important for positioning the overlay. */
+.hover-description-container {
+    position: relative;
+    overflow: hidden; /* Keeps the description inside the image area */
+}
+
+/* The overlay description element */
+.volunteer-short-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent overlay */
+    color: white;
+    display: flex; /* To center the text vertically/horizontally */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    pointer-events: none; /* Allows clicks to pass through if needed, but not necessary here */
+}
+
+/* Make the description visible on hover over the container */
+.hover-description-container:hover .volunteer-short-description {
+    opacity: 1;
+}
+
+/* Style the text inside the description */
+.volunteer-short-description p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+
+
+
+
 /* Become a volunteer */
 .become-volunteer-area {
     background: #1E1E1E;

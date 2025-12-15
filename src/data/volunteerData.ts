@@ -40,13 +40,16 @@ const volunteer_data: DataType[] = [
       thumb: volunteerThumb_1,
       name: "Olufemi Bola-Sadipe",
       designation: "Board of Advisor",
+      short_description: "Bola-Sadipe & Co (Chartered Accountants) with offices in Lagos, Kaduna (Nigeria) and Accra (Ghana).",
       item_bg: "valunteer-item--green",
+
    },
    {
       id: 2,
       page: "home_1",
       thumb: volunteerThumb_2,
       designation: "Program Coordinator",
+      short_description: "Coordinator at Sisters Unite for Children. I’m passionate about empowering children through education and creating opportunities that make a real impact.",
       name: "Chidera Obi"
    },
    {
@@ -55,7 +58,9 @@ const volunteer_data: DataType[] = [
       thumb: volunteerThumb_3,
       name: "Yetunde Onanuga",
       designation: "Member",
+      short_description: "My name is Sister Yetunde Onanuga, an administrator and also a former Deputy Governor of Ogun State. An active member of the Sisters Unite for Children since inception. l love cooking and also take pleasure in mentoring the young ones especially the 'girl child'.",
       item_bg: "valunteer-item--yellow",
+      
    },
    {
       id: 4,
