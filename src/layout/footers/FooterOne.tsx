@@ -23,22 +23,20 @@ const footer_content: ContentData = {
   ),
 };
 
-const { footer_about_text } = footer_content; 
+const { footer_about_text } = footer_content;
 
 const FooterOne = () => {
+  const date = new Date();
   return (
-    <footer
-      className="footer-area overlay text-white pt-120 bgs-cover"
-    >
+    <footer className="footer-area overlay text-white pt-120 bgs-cover">
       <div className="container">
         <div className="row justify-content-between">
-          
           {/* COLUMN 1: About Section 
               col-12: Full width on mobile (stacks vertically)
               col-lg-4: Wider on desktop (1/3rd of the 12-column grid, adjusted from original 3) 
               col-md-6: Half width on tablet
           */}
-          <div className="col-12 col-lg-4 col-md-6"> 
+          <div className="col-12 col-lg-4 col-md-6">
             <div className="widget widget_about">
               <div className="logo_footer mb-25">
                 <Link href="/">
@@ -60,7 +58,7 @@ const FooterOne = () => {
           {footer_data
             .filter((item) => item.page === "home_1")
             .map((item) => (
-              <div key={item.id} className="col-12 col-lg-2 col-md-3"> 
+              <div key={item.id} className="col-12 col-lg-2 col-md-3">
                 <div className="widget widget_nav_menu">
                   <h5 className="widget-title">{item.widget_title}</h5>
                   <ul>
@@ -75,7 +73,6 @@ const FooterOne = () => {
             ))}
 
           {/* The Photo Gallery column has been removed */}
-
         </div>
       </div>
 
@@ -84,7 +81,7 @@ const FooterOne = () => {
           <div className="footer-bottom__inner">
             <div className="donate-by"></div>
             <div className="copyright">
-              <p>Copyright 2025 All Right Reserved</p>
+              <p>Copyright {date.getFullYear()} All Right Reserved</p>
             </div>
           </div>
         </div>
