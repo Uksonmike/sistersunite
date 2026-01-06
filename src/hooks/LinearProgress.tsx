@@ -1,10 +1,7 @@
-"use client"
-import React, { useState, useEffect, useRef } from 'react';
+"use client";
+import React, { useState, useEffect, useRef } from "react";
 
-const LinearProgress = ({
-  duration = 4200,
-  finish = 85,
-}) => {
+const LinearProgress = ({ duration = 4200, finish = 85 }) => {
   const [isInViewport, setIsInViewport] = useState(false);
   const [percentage, setPercentage] = useState(0);
   const [displayedProgress, setDisplayedProgress] = useState(0);
@@ -17,18 +14,19 @@ const LinearProgress = ({
       },
       {
         root: null,
-        rootMargin: '0px',
+        rootMargin: "0px",
         threshold: 0.1,
       }
     );
 
-    if (progressRef.current) {
-      observer.observe(progressRef.current);
+    const currentRef = progressRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (progressRef.current) {
-        observer.unobserve(progressRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -42,7 +40,9 @@ const LinearProgress = ({
       const increment = () => {
         setTimeout(() => {
           const newPercentage = percentage + 1;
-          const newDisplayedProgress = Math.round(easeOutQuad(newPercentage / finish) * finish);
+          const newDisplayedProgress = Math.round(
+            easeOutQuad(newPercentage / finish) * finish
+          );
           setPercentage(newPercentage);
           setDisplayedProgress(newDisplayedProgress);
         }, interval);
@@ -58,7 +58,12 @@ const LinearProgress = ({
 
   return (
     <div ref={progressRef} className="skillbar" data-pct={displayedProgress}>
-      <span className="skill-bar-percent" style={{ left: `${displayedProgress}%` }}>{displayedProgress}%</span>
+      <span
+        className="skill-bar-percent"
+        style={{ left: `${displayedProgress}%` }}
+      >
+        {displayedProgress}%
+      </span>
       <div className="bar" style={{ width: `${displayedProgress}%` }} />
     </div>
   );
