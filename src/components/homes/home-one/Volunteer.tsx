@@ -30,13 +30,21 @@ const Volunteer = ({ style }: any) => {
                {filteredVolunteers.map((item) => (
                   <div key={item.id} className="col-xl-4 col-sm-6">
                      <div className={`valunteer-item ${item.item_bg}`}>
-                        <div className="valunteer-item__img">
+                        
+                        {/* 🌟 START OF CHANGES 🌟 */}
+                        <div className="valunteer-item__img hover-description-container">
                            <Image src={item.thumb} alt="Valunteer" />
-                         
+                           
+                           {/* The new description overlay element */}
+                           {/* Assuming 'short_description' exists in your volunteer_data */}
+                           <div className="volunteer-short-description">
+                              <p>{item.short_description}</p>
+                           </div>
                         </div>
+                        {/* 🌟 END OF CHANGES 🌟 */}
+                        
                         <div className="valunteer-item__designation">
                            <h5>{item.name}</h5>
-                           {/* --- CHANGE IS HERE --- */}
                            <span>{item.designation}</span>
                         </div>
                      </div>
@@ -57,4 +65,4 @@ const Volunteer = ({ style }: any) => {
    )
 }
 
-export default Volunteer
+export default Volunteer;
