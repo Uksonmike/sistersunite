@@ -24,6 +24,14 @@ import volunteer3Thumb_5 from "@/assets/img/valunteer/volunteer-three5.jpg";
 import volunteer3Thumb_6 from "@/assets/img/valunteer/volunteer-three6.jpg";
 import volunteer3Thumb_7 from "@/assets/img/valunteer/volunteer-three7.jpg";
 import volunteer3Thumb_8 from "@/assets/img/valunteer/volunteer-three8.jpg";
+import nkeiruka from "@/assets/img/valunteer/nkeiruka.jpeg";
+import adeola from "@/assets/img/valunteer/adeola.jpeg";
+import belema from "@/assets/img/valunteer/belema.jpeg";
+import chika from "@/assets/img/valunteer/chika.jpeg";
+import funmi from "@/assets/img/valunteer/funmi.jpeg";
+import mary from "@/assets/img/valunteer/mary.jpeg";
+import oluwaremilekun from "@/assets/img/valunteer/oluwaremilekun.jpeg";
+import Victoria from "@/assets/img/valunteer/Victoria.jpeg";
 
 interface DataType {
   id: number;
@@ -37,7 +45,36 @@ interface DataType {
 
 const volunteer_data: DataType[] = [
   {
+    id: 0,
+    page: "home_1",
+    thumb: nkeiruka,
+    name: "Nkeiruka Obi",
+    designation: "Founder",
+    short_description:
+      "Serving vulnerable children and advancing faith-driven community impact",
+    item_bg: "valunteer-item--green",
+  },
+  {
     id: 1,
+    page: "home_1",
+    thumb: mary,
+    name: "Mary Ofili",
+    designation: "Past President SUC",
+    short_description:
+      "I am passionate about people transformation — spiritually, professionally, and practically — through structured systems, leadership, and service.",
+    item_bg: "valunteer-item--green",
+  },
+  {
+    id: 2,
+    page: "home_1",
+    thumb: Victoria,
+    name: "Victoria Oluchi Ogundipe",
+    designation: "Vice President SUC",
+    short_description: "Interested in helping children and young adults.",
+    item_bg: "valunteer-item--green",
+  },
+  {
+    id: 3,
     page: "home_1",
     thumb: volunteerThumb_1,
     name: "Olufemi Bola-Sadipe",
@@ -47,43 +84,72 @@ const volunteer_data: DataType[] = [
     item_bg: "valunteer-item--green",
   },
   {
-    id: 2,
+    id: 4,
     page: "home_1",
     thumb: volunteerThumb_2,
     designation: "Program Coordinator",
     short_description:
       "Coordinator at Sisters Unite for Children. I’m passionate about empowering children through education and creating opportunities that make a real impact.",
     name: "Chidera Obi",
+    item_bg: "valunteer-item--green",
   },
   {
-    id: 3,
+    id: 5,
+    page: "home_1",
+    thumb: belema,
+    designation: "Advisor/Expert/Project",
+    short_description: "Cooking & Traveling",
+    name: "Belema Peter",
+    item_bg: "valunteer-item--green",
+  },
+  {
+    id: 6,
+    page: "home_1",
+    thumb: oluwaremilekun,
+    name: "Mrs Oluwaremilekun Soyannwo",
+    designation: "Partner at SUC",
+    short_description:
+      "Working with children and adults with special or complex learning needs.",
+    item_bg: "valunteer-item--green",
+  },
+  {
+    id: 7,
+    page: "home_1",
+    thumb: funmi,
+    name: "Funmi Bolarinwa",
+    designation: "Volunteer",
+    short_description: "Children and Talent Development",
+    item_bg: "valunteer-item--green",
+  },
+  {
+    id: 8,
     page: "home_1",
     thumb: volunteerThumb_3,
     name: "Yetunde Onanuga",
     designation: "Member",
     short_description:
       "My name is Sister Yetunde Onanuga, an administrator and also a former Deputy Governor of Ogun State. An active member of the Sisters Unite for Children since inception. l love cooking and also take pleasure in mentoring the young ones especially the 'girl child'.",
-    item_bg: "valunteer-item--yellow",
-  },
-  {
-    id: 4,
-    page: "home_1",
-    thumb: volunteerThumb_4,
-    name: "Guy Hawkins",
     item_bg: "valunteer-item--green",
   },
   {
-    id: 5,
+    id: 9,
     page: "home_1",
-    thumb: volunteerThumb_5,
-    name: "Theresa Webb",
+    thumb: adeola,
+    name: "Adeola Folashade Fadojutimi",
+    designation: "Member",
+    short_description:
+      "A Teacher by training and presently serving as a member of the Active Participant group. Interested in Soul winning.",
+    item_bg: "valunteer-item--green",
   },
   {
-    id: 6,
+    id: 10,
     page: "home_1",
-    thumb: volunteerThumb_6,
-    name: "Brooklyn Simmons",
-    item_bg: "valunteer-item--yellow",
+    thumb: chika,
+    name: "Chika Sanni",
+    designation: "Member",
+    short_description:
+      "Chika has been a member of Sisters Unite for Children Association since 2005. She worked with Citibank Nigeria Limited where she retired after 35 years as a Senior Vice President. She currently serves as a Non-Executive Director at Thrive Microfinance Bank Limited, overseeing Risk Control and Operations. In her free time, she enjoys gardening, reading, and mentoring teenagers and youths. She is a Sunday School Teacher and is actively involved in her local church.",
+    item_bg: "valunteer-item--green",
   },
 
   // home two
