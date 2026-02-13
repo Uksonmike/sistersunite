@@ -32,6 +32,7 @@ import funmi from "@/assets/img/valunteer/funmi.jpeg";
 import mary from "@/assets/img/valunteer/mary.jpeg";
 import oluwaremilekun from "@/assets/img/valunteer/oluwaremilekun.jpeg";
 import Victoria from "@/assets/img/valunteer/Victoria.jpeg";
+import folasade from "@/assets/img/valunteer/folasade.jpeg";
 
 interface DataType {
   id: number;
@@ -71,6 +72,16 @@ const volunteer_data: DataType[] = [
     name: "Victoria Oluchi Ogundipe",
     designation: "Vice President SUC",
     short_description: "Interested in helping children and young adults.",
+    item_bg: "valunteer-item--green",
+  },
+  {
+    id: 41,
+    page: "home_1",
+    thumb: folasade,
+    designation: "Chairman Board of Advisors, SUC ",
+    short_description:
+      "I Have passion for disavantaged children and passion to rescue girls in prostitution.",
+    name: "Folasade Osinubi",
     item_bg: "valunteer-item--green",
   },
   {
