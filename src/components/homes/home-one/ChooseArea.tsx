@@ -10,7 +10,7 @@ const tab_title: string[] = ["Mission", "Vision", "Values"];
 
 const tab_content: JSX.Element[] = [
   <>
-    To rescue, rehabilit ate, and reintegrate indigent children into society
+    To rescue, rehabilitate, and reintegrate indigent children into society
     through advocacy, capacity building, care, counseling, education, life skill
     training, and creation of linkages aimed at reducin g poverty, all powered
     by faith in Jesus Christ.
@@ -85,14 +85,14 @@ const ChooseArea = () => {
               <div className="why-choose-video">
                 <div className="video rel">
                   <Image src={videoBg} alt="Video" />
-                  <a
+                  {/* <a
                     onClick={() => setIsVideoOpen(true)}
                     style={{ cursor: "pointer" }}
                     className="video-play video-play--one"
                     data-effect="mfp-zoom-in"
                   >
                     <i className="fa fa-play"></i>
-                  </a>
+                  </a> */}
                 </div>
                 <Image
                   className="leaf-shape top_image_bounce"
