@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import VideoPopup from "@/modals/VideoPopup";
 
-import videoBg from "@/assets/img/video/video-bg.jpg";
+import videoBg from "@/assets/img/video/video-bg.png";
 import leafShape from "@/assets/img/shapes/three-round-green.png";
 
 const tab_title: string[] = ["Mission", "Vision", "Values"];

@@ -7,9 +7,10 @@ import volunteerShape_3 from "@/assets/img/shapes/heart.png";
 import volunteerShape_4 from "@/assets/img/shapes/house-heart.png";
 
 const Volunteer = ({ style }: any) => {
-  const filteredVolunteers = volunteer_data
-    .filter((item) => item.page === "home_1")
-    .slice(0, style ? 3 : 6);
+  const filteredVolunteers = volunteer_data.filter(
+    (item) => item.page === "home_1",
+  );
+  // .slice(0, style ? 3 : 6);
 
   return (
     <div className="volunteer-area pt-120 pb-90 rel z-1">
